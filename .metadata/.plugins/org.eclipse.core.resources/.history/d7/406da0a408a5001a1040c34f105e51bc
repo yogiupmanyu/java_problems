@@ -1,0 +1,49 @@
+package design_patterns.behaviour_design_pattern;
+
+class Editor {
+	private Integer curX , curY ;
+	private String text;
+	private String selectionWidth;
+	
+	public void setSelectionWidth(String selectionWidth) {
+		this.selectionWidth = selectionWidth;
+	}
+	
+	public void setCursor(Integer curX,Integer curY) {
+		this.curX = curX;
+		this.curY = curY;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public void Snapshot getMemento() {
+		
+	}
+}
+
+class Snapshot {
+	
+	private Integer curX , curY ;
+	private String text;
+	private String selectionWidth;
+	
+	public void setSelectionWidth(String selectionWidth) {
+		this.selectionWidth = selectionWidth;
+	}
+	
+	public void setCursor(Integer curX,Integer curY) {
+		this.curX = curX;
+		this.curY = curY;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+}
+
+public class MementoDesignPattern {
+
+}

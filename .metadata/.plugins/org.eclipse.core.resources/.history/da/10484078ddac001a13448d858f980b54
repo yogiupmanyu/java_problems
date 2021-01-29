@@ -1,0 +1,34 @@
+package design_patterns.structural_design_pattern;
+
+interface FileDownloaderAbstraction 
+{
+    public Object download(String path);
+     
+    public boolean store(Object object);
+}
+
+class FileDownloaderAbstractionImpl implements FileDownloaderAbstraction {
+    
+    private FileDownloadImplementor provider = null;
+ 
+    public FileDownloaderAbstractionImpl(FileDownloadImplementor provider) {
+        super();
+        this.provider = provider;
+    }
+ 
+    @Override
+    public Object download(String path) 
+    {
+        return provider.downloadFile(path);
+    }
+ 
+    @Override
+    public boolean store(Object object) 
+    {
+        return provider.storeFile(object);
+    }
+}
+
+public class BridgeDesignPattern {
+
+}

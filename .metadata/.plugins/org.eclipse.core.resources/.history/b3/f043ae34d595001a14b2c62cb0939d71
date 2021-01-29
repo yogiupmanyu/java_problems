@@ -1,0 +1,15 @@
+package hackerrank;
+/** 
+ * Find the number of 1s in the binary representation of a number.
+ * e.g ones(7)  = 3
+ * 
+ * 
+ * */
+
+public class NumberOfOnesInBinary {
+
+		private static int ones(int x) {
+			
+			return 0;
+		}
+}

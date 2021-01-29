@@ -1,0 +1,12 @@
+package design_patterns.structural_design_pattern;
+
+interface FileDownloaderAbstraction 
+{
+    public Object download(String path);
+     
+    public boolean store(Object object);
+}
+
+public class BridgeDesignPattern {
+
+}

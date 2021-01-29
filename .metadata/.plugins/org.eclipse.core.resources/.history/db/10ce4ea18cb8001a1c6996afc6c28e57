@@ -1,0 +1,39 @@
+package leet_code.array_practice;
+
+public class ThirdMaximumNumber {
+
+	public static int thirdMax(int[] nums) {
+		int f = Integer.MIN_VALUE;
+		int s = Integer.MIN_VALUE;
+		int t = Integer.MIN_VALUE;
+
+		for (int i = 0; i < nums.length; i++) {
+			int x = nums[i];
+			if (x > f) {
+				t = s;
+				s = f;
+				f = x;
+			} else if (x > s) {
+				t = s;
+				s = x;
+			} else if (x > t) {
+				t = x;
+			}
+
+		}
+		
+		if ( t == Integer.MIN_VALUE && s == Integer.MIN_VALUE ) {
+			return f;
+		}else if( t == Integer.MIN_VALUE  ) {
+			
+		}
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = { 2, 1 };
+		System.out.println(thirdMax(nums));
+
+	}
+}

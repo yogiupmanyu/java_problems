@@ -1,0 +1,22 @@
+package leet_code.array_practice;
+
+import java.util.HashMap;
+
+public class ContainsDuplicate {
+	
+	 public boolean containsDuplicate(int[] nums) {
+		 HashMap<Integer,Integer> cnt = new HashMap<>();
+		 
+		 for(Integer val : nums) {
+			 
+			 if(!cnt.containsKey(val)) {
+				 cnt.put(val,1);
+			 }else {
+				 return true;
+			 }
+		 }
+		 
+		 return false;
+	 }
+
+}

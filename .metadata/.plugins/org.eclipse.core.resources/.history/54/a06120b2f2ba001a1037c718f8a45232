@@ -1,0 +1,10 @@
+package leet_code.array_practice;
+
+public class ContainsDuplicate {
+	
+	 public boolean containsDuplicate(int[] nums) {
+		 
+		 return false;
+	 }
+
+}

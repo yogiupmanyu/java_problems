@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java_problems/src/data_structures/priority_queu&apos; to &apos;priority_queue&apos;" description="Rename resource &apos;priority_queu&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/data_structures/priority_queu" name="priority_queue" stamp="1591217313442" updateReferences="true"/>
+</session>

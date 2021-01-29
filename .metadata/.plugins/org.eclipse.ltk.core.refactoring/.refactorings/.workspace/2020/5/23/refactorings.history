@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 7 resources" deleteContents="false" description="Delete 7 resources" element1="/java_problems/src/design_patterns/ChainOfResponsibiltyDesignPattern.java" element2="/java_problems/src/design_patterns/CommandDesignPattern.java" element3="/java_problems/src/design_patterns/ObserverDesignPattern.java" element4="/java_problems/src/design_patterns/StateDesignPattern.java" element5="/java_problems/src/design_patterns/StrategyDesignPattern.java" element6="/java_problems/src/design_patterns/TemplateDesign.java" element7="/java_problems/src/design_patterns/VisitorDesign.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="7" stamp="1590954934398"/>
+</session>

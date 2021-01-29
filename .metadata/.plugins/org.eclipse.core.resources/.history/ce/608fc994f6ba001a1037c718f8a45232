@@ -1,0 +1,22 @@
+package leet_code.array_practice;
+/**
+ * Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+
+Note:
+
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+
+Approach 2: Hash Table
+
+Approach 3: Math
+
+Concept
+
+2*(a+b+c) - ( a+a + b+ b+c ) = c
+
+ 
+ * */
+public class SingleNumber {
+
+}

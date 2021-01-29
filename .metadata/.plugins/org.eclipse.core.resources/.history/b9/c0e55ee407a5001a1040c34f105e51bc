@@ -1,0 +1,5 @@
+package design_patterns.behaviour_design_pattern;
+
+public class MementoDesignPattern {
+
+}

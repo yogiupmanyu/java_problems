@@ -1,0 +1,10 @@
+package hackerrank;
+
+public class FraudulentActivityNotification2 {
+	
+	 static int activityNotifications(int[] expenditure, int d) {
+		 
+		 return 0;
+	 }
+
+}

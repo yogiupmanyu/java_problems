@@ -1,0 +1,79 @@
+package design_patterns.behaviour_design_pattern;
+
+class Editor {
+	private Integer curX , curY ;
+	private String text;
+	private String selectionWidth;
+	
+	public void setSelectionWidth(String selectionWidth) {
+		this.selectionWidth = selectionWidth;
+	}
+	
+	public void setCursor(Integer curX,Integer curY) {
+		this.curX = curX;
+		this.curY = curY;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	  // Saves the current state inside a memento.
+	public Snapshot getMemento() {
+		// Memento is an immutable object; that's why the
+        // originator passes its state to the memento's
+        // constructor parameters.
+
+		return new Snapshot(this.curX, this.curY, this.selectionWidth, this.text);
+	}
+}
+
+/** Memento is immutable class  and these are below requirements need  
+ * 1. Declare the class as final so it can’t be extended. Make all fields private so that direct access is not allowed. 
+ * 2. Don’t provide setter methods for variables. 
+ * 3. Make all mutable fields final so that its value can be assigned only once. 
+ * 4. Initialize all the fields via a constructor performing deep copy.
+ * 5. Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
+ */
+// Memento
+final class Snapshot {
+	private Editor editor ;
+	private Integer curX , curY ;
+	private String text;
+	private String selectionWidth;
+	
+	public Snapshot(Integer curX,Integer curY,String selectionWidth,String text) {
+		this.curX = curX;
+		this.curY = curY;
+		this.selectionWidth = selectionWidth;
+		this.text = text;
+	}
+	
+	public Editor restore() {
+		editor = new Editor();
+	}
+
+	public Integer getCurX() {
+		int curX = this.curX;
+		return curX;
+	}
+
+	public Integer getCurY() {
+		int curY = this.curY;
+		return curY;
+	}
+
+	public String getText() {
+		String textLocal = new String(this.text);
+		return textLocal;
+	}
+
+	public String getSelectionWidth() {
+		String selectionWidthLocal = new String(this.selectionWidth); 
+		return selectionWidthLocal;
+	}
+
+}
+
+public class MementoDesignPattern {
+
+}

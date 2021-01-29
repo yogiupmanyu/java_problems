@@ -1,0 +1,15 @@
+package hackerrank;
+
+public class FraudulentActivityNotification2 {
+	
+	 static int activityNotifications(int[] expenditure, int d) {
+		 int[] countSortArray = new int[201];
+		 int end = d;
+		 
+		 // perform counting sort 
+		 
+		 
+		 return 0;
+	 }
+
+}

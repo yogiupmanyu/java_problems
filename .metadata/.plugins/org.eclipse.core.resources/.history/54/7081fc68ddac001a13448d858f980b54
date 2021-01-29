@@ -1,0 +1,5 @@
+package design_patterns.structural_design_pattern;
+
+public class BridgeDesignPattern {
+
+}

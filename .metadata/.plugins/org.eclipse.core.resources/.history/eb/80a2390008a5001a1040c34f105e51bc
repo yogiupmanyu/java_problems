@@ -1,0 +1,10 @@
+package design_patterns.behaviour_design_pattern;
+
+class Editor {
+	private int text , curX , curY , selectionWidth;
+	
+}
+
+public class MementoDesignPattern {
+
+}

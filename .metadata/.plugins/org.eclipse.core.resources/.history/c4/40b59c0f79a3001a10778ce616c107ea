@@ -1,0 +1,7 @@
+package design_patterns.behaviour_design_pattern;
+/**
+ * Null Object design pattern use to provide value where no operation can be done for particular functionality 
+ * */
+public class NullObjectDesignPattern {
+
+}

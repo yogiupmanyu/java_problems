@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;java_problems/src/hackerrank/FindMedian.java&apos; to &apos;MedianOfTwoSortedArrayOfDifferentLength.java&apos;" description="Rename resource &apos;FindMedian.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/hackerrank/FindMedian.java" name="MedianOfTwoSortedArrayOfDifferentLength.java" stamp="1589828254961" updateReferences="true"/>
+</session>

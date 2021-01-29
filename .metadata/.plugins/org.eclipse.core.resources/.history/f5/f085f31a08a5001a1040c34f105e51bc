@@ -1,0 +1,15 @@
+package design_patterns.behaviour_design_pattern;
+
+class Editor {
+	private int text , curX , curY , selectionWidth;
+	
+	public void setSelectionWidth(Integer selectionWitdth) {
+		this.selectionWidth = selectionWidth;
+	}
+	
+	
+}
+
+public class MementoDesignPattern {
+
+}

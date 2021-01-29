@@ -1,0 +1,34 @@
+package leet_code.array_practice;
+
+import java.util.HashSet;
+
+/**
+ * 
+ * Approach #2 (Sorting)
+ * Approach #3 (Hash Table)
+ * Complexity Analysis
+
+    Time complexity : O(n)O(n)O(n). We do search() and insert() for nnn times and each operation takes constant time.
+
+    Space complexity : O(n)O(n)O(n). The space used by a hash table is linear with the number of elements in it.
+
+ * */
+
+public class ContainsDuplicate {
+	
+	 public boolean containsDuplicate(int[] nums) {
+		 HashSet<Integer> cnt = new HashSet<>();
+		 
+		 for(Integer val : nums) {
+			 
+			 if(cnt.contains(val))
+				 return true;
+			 
+			 cnt.add(val);
+			 
+		 }
+		 
+		 return false;
+	 }
+
+}
