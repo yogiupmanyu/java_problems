@@ -21,19 +21,25 @@ Output: [4,9,9,49,121]
 	 * */
 	
 	// Solution : solved (own)
-	public static int[] sortedSquares(int[] A) {
+	 public static int[] sortedSquares(int[] A) {
 		int[] res = new int[A.length];
 		
 		int i = 0;
 		int j = 0;
+          boolean positive = false;
 		// find first positive value
 		for(int k = 0; k<A.length;k++) {
 			if(A[k]>=0) {
 				j = k;
+                positive = true;
 				break;
 			}
 		}
-		
+          
+          //handle all negative
+		if(!positive){
+            j = A.length-1;
+        }
 		i = j-1;
 		int l = 0;
 		
